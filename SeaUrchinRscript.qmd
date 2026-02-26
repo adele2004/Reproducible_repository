@@ -13,6 +13,7 @@ When you click the **Render** button a document will be generated
 Install and get tidyverse package
 
 ```{r}
+# Use the install.packages(tidyverse) to install this tool on your own device
 library(tidyverse)
 ```
 
@@ -109,6 +110,7 @@ ggplot(urchin_clean, aes(x = diet, y = gonad_weight, fill = temperature)) +
        x = "Diet", y = "Gonad Weight (g)")
 
 # Multiple boxplots for key variables
+# Use the install.packages(patchwork) to install this tool on your own device
 library(patchwork)
 
 p1 <- ggplot(urchin_clean, aes(x = diet, y = GSI, fill = diet)) +
